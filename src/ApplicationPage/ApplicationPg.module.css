@@ -1,0 +1,145 @@
+/* Container for the entire page */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;  /* Align at the top of the page */
+  height: 100vh;
+  background-color: #f4f7fc;
+  padding: 20px;
+  overflow-y: auto;  /* Allow scrolling for the whole page */
+  width: 100%;  /* Ensure container takes full width */
+}
+
+/* Card container to hold form elements */
+.card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 900px;
+  padding: 20px;
+  box-sizing: border-box;
+  max-height: 90vh;  /* Limit height to 90% of the viewport */
+  overflow-y: auto;  /* Enable vertical scrolling inside the card */
+}
+
+/* Card content */
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Title */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-bottom: 20px; /* Add space at the bottom of the form */
+}
+
+/* Form inputs and labels */
+label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #444;
+}
+
+input,
+select,
+textarea {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* Photo Preview */
+.photoPreview {
+  margin-top: 10px;
+  max-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+}
+
+/* Form actions section */
+.formActions {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+/* Button Styles */
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.saveButton {
+  background-color: gray;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.saveButton:hover {
+  background-color: #ec971f;
+}
+
+.continueButton {
+  background-color: #5bc0de;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.continueButton:hover {
+  background-color: #31b0d5;
+}
+
+.submitButton {
+  background-color: #5cb85c;
+  color: white;
+  width: 100%;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #4cae4c;
+}
+
+/* Input Fields for File Upload */
+input[type="file"] {
+  padding: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+/* For Signature Pad Container */
+.signaturePadContainer {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Checkbox style */
+input[type="checkbox"] {
+  margin-right: 10px;
+}
